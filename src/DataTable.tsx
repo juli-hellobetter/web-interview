@@ -37,6 +37,11 @@ const mapApiToDataRow = (user: any): DataRow => ({
   zeta: user.id % 2 === 0,
 });
 
+// Fetch data from the API and display it in a table in the desired format
+// Add basic prop types or TypeScript interfaces
+// Implement simple sorting functionality
+// Indicate empty, loading and error state
+
 const DataTable: React.FC = () => {
   const [data, setData] = useState<DataRow[]>([]);
   const [loading, setLoading] = useState(true);

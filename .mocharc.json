@@ -1,0 +1,8 @@
+{
+  "diff": true,
+  "extension": ["js", "ts"],
+  "package": "./package.json",
+  "timeout": 60000,
+  "spec": ["api/**/*.test.js", "api/**/*.test.ts"],
+  "import": "tsx"
+}
