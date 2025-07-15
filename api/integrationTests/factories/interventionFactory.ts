@@ -12,7 +12,9 @@ function _generateRandomLessons(): IIntervention["lessons"] {
   const lessonTotal = randomInt(5)
   return  [...Array(lessonTotal)].map(() => ({
     title: faker.lorem.slug(3),
-    description: faker.lorem.text()
+    description: faker.lorem.text(),
+    completed: faker.datatype.boolean(),
+    progress: faker.number.int({min: 0, max: 100 })
   }))
 }
 
